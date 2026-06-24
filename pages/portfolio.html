@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="portfolio.title">Portfolio - Mohammad | IoT & Automation Solutions</title>
+    <meta name="description" data-i18n="portfolio.description" content="Explore real-world IoT monitoring systems, automation dashboards, and MATLAB solutions. Case studies showing practical engineering results.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfolio - Mohammad | IoT & Automation Solutions">
+    <meta property="og:description" content="Explore real-world IoT monitoring systems, automation dashboards, and MATLAB solutions.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">Mohammad</a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="portfolio.html" class="active" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-switch" id="langSwitch" aria-label="Switch language">
+                        <span class="lang-icon">🌐</span>
+                        <span class="lang-text">FA</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-i18n="portfolio.hero.title">Project Portfolio</h1>
+            <p data-i18n="portfolio.hero.subtitle">Real-world case studies demonstrating practical engineering solutions</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filters.all">All Projects</button>
+                <button class="filter-btn" data-filter="iot" data-i18n="portfolio.filters.iot">IoT Systems</button>
+                <button class="filter-btn" data-filter="matlab" data-i18n="portfolio.filters.matlab">MATLAB</button>
+                <button class="filter-btn" data-filter="automation" data-i18n="portfolio.filters.automation">Automation</button>
+                <button class="filter-btn" data-filter="infrastructure" data-i18n="portfolio.filters.infrastructure">Infrastructure</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1: ESP32 Sensor Monitoring -->
+                <article class="project-card" data-category="iot">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="tech-icon">
+                                <circle cx="50" cy="50" r="40" stroke="#FF7A00" stroke-width="2" fill="none"/>
+                                <circle cx="50" cy="50" r="15" fill="#FF7A00"/>
+                                <line x1="50" y1="10" x2="50" y2="25" stroke="#FF7A00" stroke-width="2"/>
+                                <line x1="50" y1="75" x2="50" y2="90" stroke="#FF7A00" stroke-width="2"/>
+                                <line x1="10" y1="50" x2="25" y2="50" stroke="#FF7A00" stroke-width="2"/>
+                                <line x1="75" y1="50" x2="90" y2="50" stroke="#FF7A00" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">MQTT</span>
+                            <span class="tag">Sensors</span>
+                        </div>
+                        <h3 data-i18n="portfolio.projects.esp32.title">ESP32 Environmental Monitoring System</h3>
+                        <p data-i18n="portfolio.projects.esp32.problem"><strong>Problem:</strong> Client needed real-time monitoring of temperature, humidity, and air quality across multiple locations.</p>
+                        <p data-i18n="portfolio.projects.esp32.solution"><strong>Solution:</strong> Deployed ESP32-based sensor nodes with MQTT communication to central Node-RED dashboard.</p>
+                        <p data-i18n="portfolio.projects.esp32.outcome"><strong>Outcome:</strong> 24/7 monitoring with instant alerts, 40% reduction in manual inspections.</p>
+                        <a href="#" class="btn btn-outline" data-i18n="portfolio.projects.viewDetails">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: MQTT Communication Platform -->
+                <article class="project-card" data-category="iot">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="tech-icon">
+                                <rect x="20" y="30" width="60" height="40" stroke="#2EC4B6" stroke-width="2" fill="none"/>
+                                <circle cx="35" cy="50" r="5" fill="#2EC4B6"/>
+                                <circle cx="65" cy="50" r="5" fill="#2EC4B6"/>
+                                <path d="M35 50 L65 50" stroke="#2EC4B6" stroke-width="2"/>
+                                <path d="M50 30 L50 20" stroke="#2EC4B6" stroke-width="2"/>
+                                <path d="M50 70 L50 80" stroke="#2EC4B6" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">MQTT</span>
+                            <span class="tag">Mosquitto</span>
+                            <span class="tag">Node-RED</span>
+                        </div>
+                        <h3 data-i18n="portfolio.projects.mqtt.title">Industrial MQTT Communication Platform</h3>
+                        <p data-i18n="portfolio.projects.mqtt.problem"><strong>Problem:</strong> Manufacturing facility required reliable machine-to-machine communication protocol.</p>
+                        <p data-i18n="portfolio.projects.mqtt.solution"><strong>Solution:</strong> Implemented Mosquitto broker with custom Node-RED flows for data routing and processing.</p>
+                        <p data-i18n="portfolio.projects.mqtt.outcome"><strong>Outcome:</strong> Sub-second latency, 99.9% uptime, scalable to 500+ devices.</p>
+                        <a href="#" class="btn btn-outline" data-i18n="portfolio.projects.viewDetails">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Node-RED Automation Dashboard -->
+                <article class="project-card" data-category="automation">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="tech-icon">
+                                <rect x="15" y="20" width="70" height="60" rx="5" stroke="#FF7A00" stroke-width="2" fill="none"/>
+                                <line x1="25" y1="35" x2="75" y2="35" stroke="#FF7A00" stroke-width="2"/>
+                                <line x1="25" y1="50" x2="75" y2="50" stroke="#FF7A00" stroke-width="2"/>
+                                <line x1="25" y1="65" x2="75" y2="65" stroke="#FF7A00" stroke-width="2"/>
+                                <circle cx="35" cy="35" r="3" fill="#FF7A00"/>
+                                <circle cx="35" cy="50" r="3" fill="#FF7A00"/>
+                                <circle cx="35" cy="65" r="3" fill="#FF7A00"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Node-RED</span>
+                            <span class="tag">Dashboard</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <h3 data-i18n="portfolio.projects.nodered.title">Smart Building Automation Dashboard</h3>
+                        <p data-i18n="portfolio.projects.nodered.problem"><strong>Problem:</strong> Office building needed centralized control for lighting, HVAC, and security systems.</p>
+                        <p data-i18n="portfolio.projects.nodered.solution"><strong>Solution:</strong> Built comprehensive Node-RED dashboard with custom UI nodes and automated workflows.</p>
+                        <p data-i18n="portfolio.projects.nodered.outcome"><strong>Outcome:</strong> 30% energy savings, unified control interface, automated scheduling.</p>
+                        <a href="#" class="btn btn-outline" data-i18n="portfolio.projects.viewDetails">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Project 4: Dockerized IoT Platform -->
+                <article class="project-card" data-category="infrastructure">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="tech-icon">
+                                <rect x="20" y="25" width="60" height="50" stroke="#2EC4B6" stroke-width="2" fill="none"/>
+                                <rect x="25" y="30" width="20" height="15" stroke="#2EC4B6" stroke-width="2" fill="none"/>
+                                <rect x="50" y="30" width="20" height="15" stroke="#2EC4B6" stroke-width="2" fill="none"/>
+                                <rect x="25" y="50" width="45" height="20" stroke="#2EC4B6" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Containers</span>
+                            <span class="tag">Deployment</span>
+                        </div>
+                        <h3 data-i18n="portfolio.projects.docker.title">Containerized IoT Data Platform</h3>
+                        <p data-i18n="portfolio.projects.docker.problem"><strong>Problem:</strong> Startup needed scalable, reproducible deployment for their IoT analytics stack.</p>
+                        <p data-i18n="portfolio.projects.docker.solution"><strong>Solution:</strong> Created Docker Compose setup with Mosquitto, Node-RED, InfluxDB, and Grafana.</p>
+                        <p data-i18n="portfolio.projects.docker.outcome"><strong>Outcome:</strong> One-command deployment, easy scaling, consistent environments across dev/prod.</p>
+                        <a href="#" class="btn btn-outline" data-i18n="portfolio.projects.viewDetails">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Project 5: Grafana Analytics Dashboard -->
+                <article class="project-card" data-category="automation">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="tech-icon">
+                                <rect x="15" y="20" width="70" height="60" rx="5" stroke="#FF7A00" stroke-width="2" fill="none"/>
+                                <polyline points="25,60 35,50 45,55 55,40 65,45 75,30" stroke="#FF7A00" stroke-width="2" fill="none"/>
+                                <circle cx="25" cy="60" r="3" fill="#FF7A00"/>
+                                <circle cx="35" cy="50" r="3" fill="#FF7A00"/>
+                                <circle cx="45" cy="55" r="3" fill="#FF7A00"/>
+                                <circle cx="55" cy="40" r="3" fill="#FF7A00"/>
+                                <circle cx="65" cy="45" r="3" fill="#FF7A00"/>
+                                <circle cx="75" cy="30" r="3" fill="#FF7A00"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Grafana</span>
+                            <span class="tag">InfluxDB</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <h3 data-i18n="portfolio.projects.grafana.title">Real-Time Analytics Dashboard</h3>
+                        <p data-i18n="portfolio.projects.grafana.problem"><strong>Problem:</strong> Research team needed visualization of time-series sensor data with custom metrics.</p>
+                        <p data-i18n="portfolio.projects.grafana.solution"><strong>Solution:</strong> Designed Grafana dashboards with InfluxDB backend, custom queries, and alerting rules.</p>
+                        <p data-i18n="portfolio.projects.grafana.outcome"><strong>Outcome:</strong> Interactive visualizations, automated reports, threshold-based notifications.</p>
+                        <a href="#" class="btn btn-outline" data-i18n="portfolio.projects.viewDetails">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Project 6: MATLAB Engineering Simulations -->
+                <article class="project-card" data-category="matlab">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="tech-icon">
+                                <rect x="20" y="20" width="60" height="60" stroke="#2EC4B6" stroke-width="2" fill="none"/>
+                                <path d="M30 70 Q50 20 70 70" stroke="#2EC4B6" stroke-width="2" fill="none"/>
+                                <path d="M30 50 Q50 10 70 50" stroke="#2EC4B6" stroke-width="2" fill="none"/>
+                                <line x1="30" y1="70" x2="70" y2="70" stroke="#2EC4B6" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">Simulink</span>
+                            <span class="tag">Simulation</span>
+                        </div>
+                        <h3 data-i18n="portfolio.projects.matlab.title">Control System Design & Simulation</h3>
+                        <p data-i18n="portfolio.projects.matlab.problem"><strong>Problem:</strong> Engineering student needed PID controller design and simulation for motor control system.</p>
+                        <p data-i18n="portfolio.projects.matlab.solution"><strong>Solution:</strong> Developed MATLAB/Simulink models with tuning algorithms and performance analysis.</p>
+                        <p data-i18n="portfolio.projects.matlab.outcome"><strong>Outcome:</strong> Optimized controller parameters, comprehensive documentation, successful thesis defense.</p>
+                        <a href="#" class="btn btn-outline" data-i18n="portfolio.projects.viewDetails">View Details</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-i18n="portfolio.cta.title">Have a Similar Project?</h2>
+            <p data-i18n="portfolio.cta.text">Let's discuss how I can help bring your technical ideas to life.</p>
+            <a href="contact.html" class="btn btn-primary" data-i18n="portfolio.cta.button">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mohammad</h3>
+                    <p data-i18n="footer.tagline">Building IoT Monitoring Systems, Automation Dashboards and MATLAB Solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.connect">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-1.334-.438-.271-.79-.896-.79-.896-.647-.443.048-.434.048-.434.716.05 1.093.735 1.093.735.638 1.094 1.673.779 2.08.594.064-.463.25-.779.452-.958-2.235-.254-4.584-1.118-4.584-1.118-.44-.355-.048-.434-.048-.434.486.044.907.498.907.498.529.908 1.411.647 1.755.496.054-.383.207-.648.389-.797-1.575-.179-3.231-.787-3.231-.787-.427-.355-.048-.434-.048-.434.473.043.898.488.898.488.519.892 1.396.636 1.739.485.065-.464.252-.78.455-.966-1.607-.183-3.295-.796-3.295-.796-.432-.355-.048-.434-.048-.434.479.044.903.492.903.492.527.905 1.408.646 1.75.493.066-.464.253-.78.456-.966-1.584-.182-3.278-.793-3.278-.793-.43-.355-.048-.434-.048-.434.476.043.901.491.901.491.526.904 1.407.645 1.749.492.067-.464.254-.78.457-.966zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"/></svg>
+                        </a>
+                        <a href="https://t.me/yourusername" target="_blank" rel="noopener" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mohammad. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
