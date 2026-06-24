@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mohammad | IoT Systems & MATLAB Solutions Consultant</title>
+    <meta name="description" content="Building IoT Monitoring Systems, Automation Dashboards and MATLAB Solutions. Helping engineers and businesses transform technical ideas into working systems.">
+    <meta name="keywords" content="IoT, MATLAB, Node-RED, ESP32, Automation, Dashboard, Docker, Engineering, Consulting">
+    <meta name="author" content="Mohammad">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mohammad | IoT Systems & MATLAB Solutions Consultant">
+    <meta property="og:description" content="Building IoT Monitoring Systems, Automation Dashboards and MATLAB Solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Mohammad - Technical Consultant",
+        "description": "IoT Solution Builder, Automation Systems Developer, MATLAB Consultant",
+        "url": "https://yourdomain.com",
+        "image": "/assets/images/hero-illustration.svg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Iran"
+        },
+        "priceRange": "$$",
+        "telephone": "+98XXXXXXXXXX"
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="logo-text">Mohammad</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/" class="nav-link active" data-translate="nav.home">Home</a></li>
+                <li><a href="/pages/services.html" class="nav-link" data-translate="nav.services">Services</a></li>
+                <li><a href="/pages/portfolio.html" class="nav-link" data-translate="nav.portfolio">Portfolio</a></li>
+                <li><a href="/pages/about.html" class="nav-link" data-translate="nav.about">About</a></li>
+                <li><a href="/pages/contact.html" class="nav-link" data-translate="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-switch" id="langSwitch" aria-label="Switch language">
+                        <span class="lang-current">FA</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-translate="hero.title">
+                    Building IoT Monitoring Systems, Automation Dashboards and MATLAB Solutions
+                </h1>
+                <p class="hero-subtitle" data-translate="hero.subtitle">
+                    Helping engineers, researchers and businesses transform technical ideas into working systems.
+                </p>
+                <div class="hero-cta">
+                    <a href="/pages/services.html" class="btn btn-primary" data-translate="hero.cta.services">View Services</a>
+                    <a href="/pages/contact.html" class="btn btn-outline" data-translate="hero.cta.contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-illustration">
+                    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Network Nodes -->
+                        <circle cx="200" cy="200" r="60" fill="none" stroke="#FF7A00" stroke-width="2" opacity="0.3"/>
+                        <circle cx="200" cy="200" r="40" fill="none" stroke="#2EC4B6" stroke-width="2" opacity="0.5"/>
+                        <circle cx="200" cy="200" r="20" fill="#2EC4B6" opacity="0.8"/>
+                        
+                        <!-- Connection Lines -->
+                        <line x1="200" y1="200" x2="100" y2="100" stroke="#FF7A00" stroke-width="1.5" opacity="0.4"/>
+                        <line x1="200" y1="200" x2="300" y2="100" stroke="#FF7A00" stroke-width="1.5" opacity="0.4"/>
+                        <line x1="200" y1="200" x2="100" y2="300" stroke="#FF7A00" stroke-width="1.5" opacity="0.4"/>
+                        <line x1="200" y1="200" x2="300" y2="300" stroke="#FF7A00" stroke-width="1.5" opacity="0.4"/>
+                        
+                        <!-- Nodes -->
+                        <g class="node" style="transform-origin: 100px 100px;">
+                            <rect x="85" y="85" width="30" height="30" rx="6" fill="#1C2541" stroke="#2EC4B6" stroke-width="2"/>
+                            <text x="100" y="105" text-anchor="middle" fill="#2EC4B6" font-size="12" font-family="Inter">IoT</text>
+                        </g>
+                        
+                        <g class="node" style="transform-origin: 300px 100px;">
+                            <rect x="285" y="85" width="30" height="30" rx="6" fill="#1C2541" stroke="#FF7A00" stroke-width="2"/>
+                            <text x="300" y="105" text-anchor="middle" fill="#FF7A00" font-size="12" font-family="Inter">MQTT</text>
+                        </g>
+                        
+                        <g class="node" style="transform-origin: 100px 300px;">
+                            <rect x="85" y="285" width="30" height="30" rx="6" fill="#1C2541" stroke="#2EC4B6" stroke-width="2"/>
+                            <text x="100" y="305" text-anchor="middle" fill="#2EC4B6" font-size="12" font-family="Inter">ESP32</text>
+                        </g>
+                        
+                        <g class="node" style="transform-origin: 300px 300px;">
+                            <rect x="285" y="285" width="30" height="30" rx="6" fill="#1C2541" stroke="#FF7A00" stroke-width="2"/>
+                            <text x="300" y="305" text-anchor="middle" fill="#FF7A00" font-size="12" font-family="Inter">NR</text>
+                        </g>
+                        
+                        <!-- Animated Dots -->
+                        <circle cx="150" cy="150" r="4" fill="#FF7A00">
+                            <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="250" cy="150" r="4" fill="#2EC4B6">
+                            <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="150" cy="250" r="4" fill="#FF7A00">
+                            <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="250" cy="250" r="4" fill="#2EC4B6">
+                            <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="expertise.title">Technical Expertise</h2>
+                <p class="section-subtitle" data-translate="expertise.subtitle">Specialized solutions for engineering challenges</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise.iot.title">IoT Systems</h3>
+                    <p data-translate="expertise.iot.desc">End-to-end IoT monitoring and control systems with real-time data collection</p>
+                </div>
+                
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise.matlab.title">MATLAB & Simulink</h3>
+                    <p data-translate="expertise.matlab.desc">Engineering simulations, data analysis and algorithm development</p>
+                </div>
+                
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise.nodered.title">Node-RED Solutions</h3>
+                    <p data-translate="expertise.nodered.desc">Visual automation flows and integration platforms for IoT</p>
+                </div>
+                
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise.docker.title">Docker Deployment</h3>
+                    <p data-translate="expertise.docker.desc">Containerized infrastructure for scalable IoT applications</p>
+                </div>
+                
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/>
+                            <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/>
+                            <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/>
+                            <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise.esp32.title">ESP32 Development</h3>
+                    <p data-translate="expertise.esp32.desc">Custom firmware and sensor integration for embedded systems</p>
+                </div>
+                
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise.dataviz.title">Data Visualization</h3>
+                    <p data-translate="expertise.dataviz.desc">Interactive dashboards and analytics for informed decision-making</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview" id="servicesPreview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="services.title">What I Deliver</h2>
+                <p class="section-subtitle" data-translate="services.subtitle">Practical solutions for real engineering problems</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-badge" data-translate="services.badge.popular">Popular</div>
+                    <h3 data-translate="services.matlab.title">MATLAB Training & Consulting</h3>
+                    <p data-translate="services.matlab.desc">From simulation to implementation - get expert guidance on MATLAB projects</p>
+                    <ul class="service-list">
+                        <li data-translate="services.matlab.item1">System modeling</li>
+                        <li data-translate="services.matlab.item2">Algorithm development</li>
+                        <li data-translate="services.matlab.item3">Data analysis</li>
+                    </ul>
+                    <a href="/pages/services.html" class="service-link" data-translate="services.learnMore">Learn More →</a>
+                </div>
+                
+                <div class="service-card reveal">
+                    <h3 data-translate="services.iot.title">IoT Monitoring Systems Design</h3>
+                    <p data-translate="services.iot.desc">Complete sensor networks with real-time monitoring capabilities</p>
+                    <ul class="service-list">
+                        <li data-translate="services.iot.item1">Sensor integration</li>
+                        <li data-translate="services.iot.item2">MQTT communication</li>
+                        <li data-translate="services.iot.item3">Cloud connectivity</li>
+                    </ul>
+                    <a href="/pages/services.html" class="service-link" data-translate="services.learnMore">Learn More →</a>
+                </div>
+                
+                <div class="service-card reveal">
+                    <h3 data-translate="services.dashboard.title">Automation Dashboards Development</h3>
+                    <p data-translate="services.dashboard.desc">Visual interfaces for controlling and monitoring your systems</p>
+                    <ul class="service-list">
+                        <li data-translate="services.dashboard.item1">Real-time displays</li>
+                        <li data-translate="services.dashboard.item2">Control panels</li>
+                        <li data-translate="services.dashboard.item3">Alert systems</li>
+                    </ul>
+                    <a href="/pages/services.html" class="service-link" data-translate="services.learnMore">Learn More →</a>
+                </div>
+            </div>
+            
+            <div class="services-cta">
+                <a href="/pages/services.html" class="btn btn-primary" data-translate="services.viewAll">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview Section -->
+    <section class="portfolio-preview" id="portfolioPreview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="portfolio.title">Featured Projects</h2>
+                <p class="section-subtitle" data-translate="portfolio.subtitle">Case studies demonstrating practical solutions</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#1C2541"/>
+                                <circle cx="150" cy="100" r="40" fill="none" stroke="#2EC4B6" stroke-width="2"/>
+                                <circle cx="150" cy="100" r="20" fill="#2EC4B6" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag tag-iot" data-translate="tags.iot">IoT</span>
+                            <span class="tag tag-hardware" data-translate="tags.hardware">Hardware</span>
+                        </div>
+                        <h3 data-translate="portfolio.project1.title">ESP32 Sensor Monitoring</h3>
+                        <p data-translate="portfolio.project1.desc">Wireless sensor network with real-time data transmission and cloud dashboard</p>
+                        <a href="/pages/portfolio.html" class="portfolio-link" data-translate="portfolio.viewDetails">View Details →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#1C2541"/>
+                                <rect x="50" y="50" width="200" height="100" rx="8" fill="none" stroke="#FF7A00" stroke-width="2"/>
+                                <line x1="70" y1="80" x2="230" y2="80" stroke="#FF7A00" stroke-width="2"/>
+                                <line x1="70" y1="100" x2="180" y2="100" stroke="#FF7A00" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag tag-nodered" data-translate="tags.nodered">Node-RED</span>
+                            <span class="tag tag-automation" data-translate="tags.automation">Automation</span>
+                        </div>
+                        <h3 data-translate="portfolio.project2.title">Node-RED Automation Dashboard</h3>
+                        <p data-translate="portfolio.project2.desc">Industrial automation control system with visual flow programming</p>
+                        <a href="/pages/portfolio.html" class="portfolio-link" data-translate="portfolio.viewDetails">View Details →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#1C2541"/>
+                                <path d="M50 150 L100 100 L150 120 L200 60 L250 90" fill="none" stroke="#2EC4B6" stroke-width="3"/>
+                                <circle cx="50" cy="150" r="5" fill="#2EC4B6"/>
+                                <circle cx="100" cy="100" r="5" fill="#2EC4B6"/>
+                                <circle cx="150" cy="120" r="5" fill="#2EC4B6"/>
+                                <circle cx="200" cy="60" r="5" fill="#2EC4B6"/>
+                                <circle cx="250" cy="90" r="5" fill="#2EC4B6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag tag-matlab" data-translate="tags.matlab">MATLAB</span>
+                            <span class="tag tag-analysis" data-translate="tags.analysis">Analysis</span>
+                        </div>
+                        <h3 data-translate="portfolio.project3.title">MATLAB Engineering Simulations</h3>
+                        <p data-translate="portfolio.project3.desc">Complex system modeling and simulation for research applications</p>
+                        <a href="/pages/portfolio.html" class="portfolio-link" data-translate="portfolio.viewDetails">View Details →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <a href="/pages/portfolio.html" class="btn btn-outline" data-translate="portfolio.viewAll">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust" id="trust">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-stats reveal">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label" data-translate="trust.projects">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label" data-translate="trust.years">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label" data-translate="trust.satisfaction">Client Satisfaction</span>
+                    </div>
+                </div>
+                
+                <div class="trust-tech reveal">
+                    <h3 class="trust-title" data-translate="trust.techStack">Technology Stack</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">MATLAB</div>
+                        <div class="tech-item">Simulink</div>
+                        <div class="tech-item">ESP32</div>
+                        <div class="tech-item">Node-RED</div>
+                        <div class="tech-item">Docker</div>
+                        <div class="tech-item">MQTT</div>
+                        <div class="tech-item">Grafana</div>
+                        <div class="tech-item">Python</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trust-cta reveal">
+                <a href="/assets/Mohammad_CV.pdf" class="btn btn-outline" download data-translate="trust.downloadCV">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="ctaSection">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 data-translate="cta.title">Ready to Transform Your Ideas?</h2>
+                <p data-translate="cta.subtitle">Let's discuss how I can help you build practical technical solutions</p>
+                <a href="/pages/contact.html" class="btn btn-primary" data-translate="cta.button">Start a Conversation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <span class="logo-text">Mohammad</span>
+                    </a>
+                    <p data-translate="footer.tagline">Technical Consultant & IoT Solution Builder</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-translate="footer.navigation">Quick Links</h4>
+                    <ul>
+                        <li><a href="/" data-translate="nav.home">Home</a></li>
+                        <li><a href="/pages/services.html" data-translate="nav.services">Services</a></li>
+                        <li><a href="/pages/portfolio.html" data-translate="nav.portfolio">Portfolio</a></li>
+                        <li><a href="/pages/about.html" data-translate="nav.about">About</a></li>
+                        <li><a href="/pages/contact.html" data-translate="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4 data-translate="footer.connect">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-1.334-.464-.341.054-1.014.054-1.014.647-.355 1.088-.355 1.088-.355.601.044 1.098.614 1.098.614.639 1.094 1.676.779 2.087.596.063-.463.249-.78.452-.959-1.606-.183-3.295-.803-3.295-.803-.268-.192.684-.202.684-.202 1.776.125 2.712 1.821 2.712 1.821.791 1.356 2.084.966 2.593.738.02-.579.309-.978.562-1.201-1.98-.225-4.061-.991-4.061-.991-.245-.176.581-.213.581-.213 2.21.198 3.356 2.263 3.356 2.263.974 1.668 2.558 1.187 3.181.902.099-.704.38-1.186.638-1.457-2.225-.253-4.564-1.112-4.564-1.112-.239-.175.538-.221.538-.221 2.498.178 3.606 2.569 3.606 2.569.705 1.204 2.073.857 2.587.613.081-.578.308-.977.561-1.201-2.002-.227-4.102-.992-4.102-.992-.237-.175.53-.221.53-.221 2.254.2 3.384 2.298 3.384 2.298.962 1.647 2.516 1.173 3.146.884.099-.703.379-1.185.637-1.456-2.219-.252-4.354-1.111-4.354-1.111-.236-.174.529-.22.529-.22 2.492.197 3.6 2.293 3.6 2.293.95 1.623 2.481 1.156 3.115.867.099-.703.378-1.184.636-1.455z"/></svg>
+                        </a>
+                        <a href="https://t.me/yourusername" target="_blank" rel="noopener" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </a>
+                        <a href="mailto:your.email@example.com" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Mohammad. <span data-translate="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
