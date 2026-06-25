@@ -23,7 +23,7 @@
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="container nav-container">
-            <a href="../index.html" class="logo">Mohammad</a>
+            <a href="../index.html" class="logo"><span class="logo-text">Mohammad</span></a>
             
             <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
@@ -31,16 +31,16 @@
                 <span></span>
             </button>
             
-            <ul class="nav-menu">
-                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
-                <li><a href="./services.html" data-i18n="nav.services">Services</a></li>
-                <li><a href="./portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
-                <li><a href="./about.html" class="active" data-i18n="nav.about">About</a></li>
-                <li><a href="./contact.html" data-i18n="nav.contact">Contact</a></li>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" data-i18n="nav.home" class="nav-link" >Home</a></li>
+                <li><a href="./services.html" data-i18n="nav.services" class="nav-link">Services</a></li>
+                <li><a href="./portfolio.html" data-i18n="nav.portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="./about.html" class="active" data-i18n="nav.about" class="nav-link active">About</a></li>
+                <li><a href="./contact.html" data-i18n="nav.contact" class="nav-link">Contact</a></li>
                 <li>
                     <button class="lang-switch" id="langSwitch" aria-label="Switch language">
                         <span class="lang-icon">🌐</span>
-                        <span class="lang-text">FA</span>
+                        <span class="lang-current">FA</span>
                     </button>
                 </li>
             </ul>
@@ -48,7 +48,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="page-hero">
+    <section class="page-header">
         <div class="container">
             <h1 data-i18n="about.hero.title">About Mohammad</h1>
             <p data-i18n="about.hero.subtitle">Technical Consultant & IoT Solution Builder</p>
@@ -184,12 +184,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer-grid">
+                <div class="footer-brand">
                     <h3>Mohammad</h3>
                     <p data-i18n="footer.tagline">Building IoT Monitoring Systems, Automation Dashboards and MATLAB Solutions</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-links">
                     <h4 data-i18n="footer.quickLinks">Quick Links</h4>
                     <ul>
                         <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
@@ -199,7 +199,7 @@
                         <li><a href="./contact.html" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-social">
                     <h4 data-i18n="footer.connect">Connect</h4>
                     <div class="social-links">
                         <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn">
